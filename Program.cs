@@ -38,6 +38,24 @@ namespace LearnitLab1
             Duration D4 = new Duration(666);
             Console.WriteLine(D4.ToString());
             // Output: Minutes
+            /*------------------------Task3-----------------------*/
+            Console.WriteLine("/*--------------------Task3-------------------------*/\r\n");
+            D3 = D1 + D2;
+
+            Console.WriteLine((D3).ToString());
+            D3 = D3 + 666;
+            Console.WriteLine((D3).ToString());
+            D3++;
+            Console.WriteLine(D3);
+            D3 = --D2;
+            Console.WriteLine(D3);
+
+            Console.WriteLine(D1<=D2);
+
+
+
+
+
         }
     }
 }
