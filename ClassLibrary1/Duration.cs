@@ -98,6 +98,18 @@ namespace ClassLibrary1
             return duration1 <= duration2;
         }
 
+
+        public static Duration operator +(int secondsToAdd, Duration d1)
+        {
+            int totalSeconds = d1._hours * 3600 + d1._minutes * 60 + d1._seconds + secondsToAdd;
+
+            int hours = totalSeconds / 3600;
+            int minutes = (totalSeconds % 3600) / 60;
+            int seconds = totalSeconds % 60;
+
+            return new Duration(hours, minutes, seconds);
+        }
+
         public static Duration operator +(Duration d1, int secondsToAdd)
         {
             int totalSeconds = d1._hours * 3600 + d1._minutes * 60 + d1._seconds + secondsToAdd;
